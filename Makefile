@@ -3,6 +3,8 @@ build:
 	docker-compose build
 run:
 	docker-compose up -d
+cli:
+	docker-compose run spanner-cli ./wrap
 stop:
 	docker-compose down
 clean:
