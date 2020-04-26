@@ -1,0 +1,2 @@
+#!/bin/sh
+./spanner-cli -p ${PROJECT_ID} -i ${SPANNER_INSTANCE} -d ${SPANNER_DATABASE} --prompt='[\d]\t> '

@@ -1,0 +1,5 @@
+FROM google/cloud-sdk:alpine
+WORKDIR /gcloud
+RUN gcloud config configurations create emulator
+COPY gcloud-init.sh gcloud-init.sh
+CMD ["sh", "gcloud-init.sh"]
