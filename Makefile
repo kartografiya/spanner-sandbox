@@ -6,4 +6,4 @@ run:
 stop:
 	docker-compose down
 clean:
-	docker rmi $(docker images -f "dangling=true" -q) || echo "No dangling images!"
+	docker rmi $$(docker images -f "dangling=true" -q) || echo "No dangling images!"
