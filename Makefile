@@ -1,5 +1,5 @@
 build:
-	docker network create spanner
+	docker network inspect spanner >/dev/null 2>&1 || docker network create spanner
 	docker-compose build
 run:
 	docker-compose up -d
