@@ -3,6 +3,9 @@ version: "3.4"
 services:
   spanner-emulator:
     image: gcr.io/cloud-spanner-emulator/emulator:0.7.3
+    ports:
+      - 9010:9010
+      - 9020:9020
     networks:
       spanner:
         aliases:
